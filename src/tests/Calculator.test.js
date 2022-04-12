@@ -96,10 +96,5 @@ describe('Calculator', () => {
     expect(runningTotal.text()).toEqual('9');
   })
 
-  xit("Should be ", () => {
-    
-  })
-
-
 })
 
