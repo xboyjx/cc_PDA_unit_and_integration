@@ -72,4 +72,9 @@ describe("Calculator", () => {
     cy.get('#operator-equals').click();
     cy.get('#running-total').should('contain', 'error')
   })
+
+  it("numbers buttons should update the running total", () => {
+    cy.get('#number9').click();
+    cy.get('#running-total').should('contain', '9')
+  })
 })
